@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Enlace Expirado — Galería Privada">
+  <main
+    class="flex min-h-dvh flex-col items-center justify-center px-6 text-center"
+  >
+    <!-- Lock Icon -->
+    <div class="animate-fade-in mb-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="0.75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="text-text-tertiary"
+      >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        <circle cx="12" cy="16" r="1"></circle>
+      </svg>
+    </div>
+
+    <!-- Title -->
+    <h1
+      class="animate-fade-in-up animation-delay-300 hero-title text-[clamp(2.5rem,6vw,4.5rem)] text-text-primary"
+    >
+      Enlace Expirado
+    </h1>
+
+    <!-- Ornamental Divider -->
+    <div class="animate-fade-in animation-delay-500 mt-8 divider-ornament">
+      <span></span>
+    </div>
+
+    <!-- Message -->
+    <p
+      class="animate-fade-in-up animation-delay-700 mt-8 max-w-sm font-sans text-[0.8rem] font-light leading-[1.8] text-text-secondary"
+    >
+      Por seguridad y privacidad, este enlace ha caducado.<br />
+      Tu galería estuvo disponible durante 7 días desde su publicación.
+    </p>
+
+    <!-- Contact -->
+    <p
+      class="animate-fade-in-up animation-delay-900 mt-12 font-sans text-[0.7rem] font-light tracking-wide text-text-tertiary"
+    >
+      ¿Necesitas acceso nuevamente?
+      <a
+        href="mailto:contacto@tufotografo.com"
+        class="ml-1 border-b border-text-tertiary text-text-secondary transition-all duration-300 hover:border-text-primary hover:text-text-primary"
+      >
+        Contacta al fotógrafo
+      </a>
+    </p>
+  </main>
+</BaseLayout>
