@@ -4,11 +4,11 @@ import { defineMiddleware } from "astro:middleware";
  * Gallery Expiration Middleware
  *
  * Redirects users to /galeria-expirada if the gallery has expired.
- * Change PUBLISH_DATE to the actual date the gallery was published.
+ * Change PUBLISH_DATE to the date and time the gallery was reactivated.
  * Change EXPIRY_DAYS to adjust the expiration window.
  */
-const PUBLISH_DATE = new Date("2026-07-20T00:00:00");
-const EXPIRY_DAYS = 7;
+const PUBLISH_DATE = new Date("2026-10-30T19:37:47Z");
+const EXPIRY_DAYS = 1;
 
 export const onRequest = defineMiddleware((context, next) => {
   const { pathname } = context.url;
